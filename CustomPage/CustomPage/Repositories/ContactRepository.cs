@@ -22,7 +22,7 @@ namespace CustomPage.Repositories
             {
                 using (var cn = SqlEngineSpecifications.CreateAndOpenConnection())
                 {
-                    var sql = "INSERT INTO [dbo].[Contact] ([Name], [Lastname], [Comment], [Email]) VALUES (@Name, @Lastname, @Comment, @Email)";
+                    var sql = "INSERT INTO [Contact] ([Name], [Lastname], [Comment], [Email]) VALUES (@Name, @Lastname, @Comment, @Email)";
 
                     using (var sqlda = new SqlDataAdapter(sql, cn.ConnectionString))
                     {

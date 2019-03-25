@@ -31,14 +31,14 @@ namespace CustomPage.Repositories
             {
                 using (var cn = SqlEngineSpecifications.CreateAndOpenConnection())
                 {
-                    var sql = "SELECT * FROM [CustomPage2019].[dbo].[Coffee]";
+                    var sql = "SELECT * FROM [Coffee]";
 
                     using (var sqlda = new SqlDataAdapter(sql, cn.ConnectionString))
                     {
                         DataSet ds = new DataSet();
 
                         sqlda.Fill(ds);
-                        if (ds != null)
+                        if (ds.Tables.Count != 0)
                         {
                             coffes = ds.Tables[0].AsEnumerable().Select(
                                 datarow => new Coffee()
@@ -46,7 +46,7 @@ namespace CustomPage.Repositories
                                     Id = datarow.Field<long>("Id"),
                                     Description = datarow.Field<string>("Description"),
                                     Name = datarow.Field<string>("Name")
-                                }).ToList();
+                                }).ToList().OrderBy(s => s.Name);
                         }
                     }
                 }
