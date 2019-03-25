@@ -1,0 +1,41 @@
+﻿@using CustomPage.App_LocalResources
+@using CustomPage.Models
+
+<div class="content speciality">
+    <h2 class="mt40 pt40 text-center">@GlobalRes.about_specializations_title</h2>
+    <div class="row center-margin">
+
+        @{
+            int index = 1;
+        }
+
+        @foreach (var item in Model)
+        {
+            if (index % 2 == 0)
+            {
+                <div class="pair">
+                    <div class="display-inline text-center">
+                        <img src="../../Images/coffeRecipe/@(index).jpg" />
+                    </div>
+                    <div class="display-inline text-center pl30 pr30 content-text">
+                        <h2 class="mb10"></h2>
+                        <p>@item.Description</p>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="odd">
+                    <div class="display-inline text-center pl30 pr30 content-text">
+                        <h2 class="mb10"></h2>
+                        <p>@item.Description</p>
+                    </div>
+                    <div class="display-inline text-center">
+                        <img src="../../Images/coffeRecipe/@(index).jpg"/>
+                    </div>
+                </div>
+            }
+            ++index;
+        }
+    </div>
+</div>

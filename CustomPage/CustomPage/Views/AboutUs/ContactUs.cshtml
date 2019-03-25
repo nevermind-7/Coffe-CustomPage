@@ -1,0 +1,88 @@
+﻿@using CustomPage.App_LocalResources
+@model CustomPage.Models.Contact
+
+<div class="content contact">
+    <div class="text-center contact-container mt40 pt40 pb40" style="height: 100vh;">
+        <h2 class="text-center brown underlined pb40">@GlobalRes.about_contact_us_title</h2>
+        <div class="information">
+            <h2 class="mb20">@GlobalRes.about_contact_us_phone</h2>
+            <div class="mb20">
+                <p class="mb5">@(GlobalRes.about_contact_us_phone_USA): +1 111 9211111 </p>
+                <p>@(GlobalRes.about_contact_us_phone_AR): +54 0223 1111111</p>
+            </div>
+            <h2 class="mb20">@GlobalRes.about_contact_us_email</h2>
+            <div class="mb5">
+                <a href="mailto:hello@test.net">hello@test.net</a>
+            </div>
+            <h2 class="mb20">@GlobalRes.about_contact_us_address</h2>
+            <div class="mb10">
+                <p>Mar Del Plata, Argentina</p>
+            </div>
+
+            <div class="contact-form mb10">
+                <h2 class="mt20 mb20">@GlobalRes.about_contact_us_comment_title</h2>
+                @using (Html.BeginForm("addContact", "AboutUs", FormMethod.Post, new { @id = "registerContact" }))
+            {
+                <ol>
+                    <li class="mb10">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name)
+                        @Html.ValidationMessageFor(m => m.Name)
+                    </li>
+                    <li class="mb10">
+                        @Html.LabelFor(m => m.Lastname)
+                        @Html.TextBoxFor(m => m.Lastname)
+                        @Html.ValidationMessageFor(m => m.Lastname)
+                    </li>
+                    <li class="mb10">
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email)
+                        @Html.ValidationMessageFor(m => m.Email)
+                    </li>
+                    <li class="mb10">
+                        @Html.LabelFor(m => m.Comment)
+                        @Html.TextBoxFor(m => m.Comment)
+                        @Html.ValidationMessageFor(m => m.Comment)
+                    </li>
+                </ol>
+                <div class="row">
+                    <input class="btn btn-default" type="submit" value="@GlobalRes.contact_form_btn_submit" id="btnSubmit" />
+                </div>
+                <div class="row mt10">
+                    <span id="success-message" class="success-message">@GlobalRes.success_message</span>
+                    </div>
+                }
+                </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $("#btnSubmit").click(function (e) {
+            e.preventDefault();
+            var _this = $(this);
+            var _form = _this.closest("form");
+
+            $(this).removeData("validator").removeData("unobtrusiveValidation");
+            $.validator.unobtrusive.parse($(this));
+
+            $(_form).removeData("validator").removeData("unobtrusiveValidation");
+            $.validator.unobtrusive.parse($(_form));
+
+            _form.validate();
+            if (_form.valid()) {
+                $.post(_form.attr("action"), _form.serialize(), function (data) {
+                    if (data.response === true) {
+                        $("#Name").val("");
+                        $("#Lastname").val("");
+                        $("#Email").val("");
+                        $("#Comment").val("");
+                        $('#success-message').fadeIn().delay(2000).fadeOut('slow');
+                    }
+                });
+            }
+        });
+    });
+</script>

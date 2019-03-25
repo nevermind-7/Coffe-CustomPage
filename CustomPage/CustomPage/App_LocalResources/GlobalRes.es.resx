@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about_contact_us" xml:space="preserve">
+    <value>Contactanos</value>
+  </data>
+  <data name="about_contact_us_address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="about_contact_us_comment_title" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="about_contact_us_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="about_contact_us_phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="about_contact_us_phone_AR" xml:space="preserve">
+    <value>ARG</value>
+  </data>
+  <data name="about_contact_us_phone_USA" xml:space="preserve">
+    <value>USA llamada gratuita</value>
+  </data>
+  <data name="about_contact_us_title" xml:space="preserve">
+    <value>Contacto Directo</value>
+  </data>
+  <data name="about_specializations" xml:space="preserve">
+    <value>Especialización</value>
+  </data>
+  <data name="about_specializations_title" xml:space="preserve">
+    <value>Tipos de Café</value>
+  </data>
+  <data name="about_where_are_we" xml:space="preserve">
+    <value>Donde nos encontramos?</value>
+  </data>
+  <data name="about_where_are_we_content" xml:space="preserve">
+    <value>Con una cafetería en casi todos los rincones de innumerables ciudades de todo el mundo, no es de extrañar que el café sea uno de los principales productos del mundo. Como la tercera bebida más consumida del mundo, después del agua y el té, los granos de café tienen una gran demanda en todas partes. Las principales naciones productoras producen cada una millones de kilogramos de granos de café que llegan a las manos de los consumidores ansiosos.</value>
+  </data>
+  <data name="about_who_we_are" xml:space="preserve">
+    <value>Quienes somos?</value>
+  </data>
+  <data name="about_who_we_are_content" xml:space="preserve">
+    <value>Solo compramos a los agricultores más experimentados y conocedores porque producen frijoles especiales de la más alta calidad. Estos cafés tienen un sabor increíble, son difíciles de encontrar pero valen el esfuerzo extra. Luego, dedicamos una enorme cantidad de tiempo y energía a asegurarnos de que cada lote de café que tostamos cumpla o supere los estándares que estamos buscando. Para hacer esto, tomamos y analizamos cada lote para descubrir cómo asar el siguiente aún mejor. Usamos una combinación de herramientas bastante sorprendentes, así como nuestros paladares. Lleva tiempo, pero creemos que es lo que nos ayuda a mejorar nuestro arte y nuestros cafés - semana tras semana.</value>
+  </data>
+  <data name="about_who_we_are_intro" xml:space="preserve">
+    <value>Somos un galardonado, pequeño lote, tostador de especialidades. Nos apasiona buscar y tostar de forma sostenible los mejores cafés del mundo y asociarnos con nuestros clientes para ayudarles a servir excelentes cafés a los suyos. Vivimos y trabajamos en una comunidad increíble y amamos la industria en la que trabajamos. Comenzamos a reunir algunos premios y atención increíbles, ¡lo que nos hace trabajar aún más!</value>
+  </data>
+  <data name="contact_comment_attr" xml:space="preserve">
+    <value>Comentario</value>
+  </data>
+  <data name="contact_email_attr" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="contact_form_btn_submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="contact_form_comment_error" xml:space="preserve">
+    <value>Ingrese un comentario válido.</value>
+  </data>
+  <data name="contact_form_comment_error_length" xml:space="preserve">
+    <value>Longitud máxima de comentario es 400.</value>
+  </data>
+  <data name="contact_form_email_error" xml:space="preserve">
+    <value>Ingrese un correo electrónico válido</value>
+  </data>
+  <data name="contact_form_email_error_type" xml:space="preserve">
+    <value>Ingrese un correo electrónico válido</value>
+  </data>
+  <data name="contact_form_lastname_error" xml:space="preserve">
+    <value>Ingrese un apellido válido.</value>
+  </data>
+  <data name="contact_form_lastname_error_length" xml:space="preserve">
+    <value>Longitud máxima de apellido es 50.</value>
+  </data>
+  <data name="contact_form_name_error" xml:space="preserve">
+    <value>Ingrese un nombre válido.</value>
+  </data>
+  <data name="contact_form_name_error_length" xml:space="preserve">
+    <value>Longitud máxima de nombre es 50.</value>
+  </data>
+  <data name="contact_lastname_attr" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="contact_name_attr" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lang_eng" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="lang_es" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="nav_AboutUs" xml:space="preserve">
+    <value>Acerca de nosotros</value>
+  </data>
+  <data name="nav_Contact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="nav_Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="success_message" xml:space="preserve">
+    <value>Gracias por su comentario.</value>
+  </data>
+</root>

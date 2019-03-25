@@ -1,0 +1,23 @@
+﻿@using CustomPage.App_LocalResources
+
+<div class="content">
+    <div class="about-container">
+        <div class="row button-container">
+            <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 text-center">
+                @Ajax.ActionLink(GlobalRes.about_who_we_are, "HowWeAre", "AboutUs", new AjaxOptions { UpdateTargetId = "content-loader" })
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 text-center">
+                @Ajax.ActionLink(GlobalRes.about_specializations, "Specializations", "AboutUs", new AjaxOptions { UpdateTargetId = "content-loader" })
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 text-center">
+                @Ajax.ActionLink(GlobalRes.about_where_are_we, "WhereAre", "AboutUs", new AjaxOptions { UpdateTargetId = "content-loader" })
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 text-center">
+                @Ajax.ActionLink(GlobalRes.about_contact_us, "ContactUs", "AboutUs", new AjaxOptions { UpdateTargetId = "content-loader" })
+            </div>
+        </div>
+        <div id="content-loader">
+            @Html.Partial("~/Views/AboutUs/WhoWeAre.cshtml")
+        </div>
+    </div>
+</div>
